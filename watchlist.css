@@ -1,0 +1,483 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+.remove-button {
+    background-color: #4B4B4B;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    display: flex;
+}
+
+.remove-button:hover {
+    background-color: #2E2E2E;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the body takes at least the full viewport height */
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ------ HEADER SECTION  ------ */
+#header-container{
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+  
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+#headertext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 0 20px; /* Add padding to create space from the edge */
+   
+}
+span{
+    color: yellow;
+}
+
+
+h1, h3 {
+    color: whitesmoke;
+    
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+
+    font-size: 43px;
+    font-weight: 800;
+}
+
+
+
+a:hover{
+    color: yellow;
+}
+
+
+#moviediv-icon{
+    background-image: url("images/icon.png");
+    width: 70px;
+    height: 61px;
+    background-size: cover;
+    margin-top:-5px;
+}
+
+#wrapper-moviediv-icon{
+    display: flex;
+    flex-direction: column;
+ 
+    width: 300px;
+    height: 150px;
+    margin: 320px auto;
+    align-items: center;
+}
+
+h4{
+width: 148px;
+height: 20px;
+top: 508px;
+left: 201px;
+font-family: 'Inter', sans-serif;
+font-size: 18px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color: #2E2E2F;
+
+}
+
+/* Add these styles to your existing CSS file or style block */
+
+.movie .rating {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+
+.movie-info {
+    display: flex;
+    align-items: center;
+    margin-top: 5px; /* Add a small margin at the top */
+}
+
+.movie-title {
+    margin: 0;
+    margin-right: 15px; /* Adds space to the right of the title */
+}
+
+
+
+
+#watchlist-container {
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+    align-items: center; /* Center-align items horizontally */
+    margin-top: 20px;
+}
+
+.watchlist-movie {
+    border-radius: 5px; /* As per index.css */
+    text-align: left;
+    margin: 25px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10); /* Add box shadow */
+}
+
+
+
+.movie-poster {
+    float: left; /* Float the image to the left */
+    max-width: 20%; /* Set maximum width for movie image */
+    height: auto;
+    margin-right: 10px; /* Add margin to separate image from details */
+}
+
+
+
+.movie h2 {
+    margin-top: 0;
+}
+
+.movie p {
+    margin: 5px 0;
+}
+
+.description {
+    /* ... (Other styles) */
+    word-wrap: break-word; /* Allow words to break within the text */
+    overflow-wrap: break-word; /* Alternate property for better compatibility */
+    max-width: 700px; /* Set the maximum width before wrapping */
+    /* ... (Other styles) */
+}
+
+
+h2 {
+    color: wheat;
+    margin-bottom: 8px; /* Add spacing at the bottom of h2 */
+}
+
+
+.movie-details p {
+    margin: 4px 0; /* Add spacing above and below paragraphs */
+    margin-right: 15px;
+}
+
+.movie .rating {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.white-text {
+    color: white;
+}
+
+.desc-text {
+    color:  #A5A5A5;
+    
+}
+
+.yellow-star {
+    color: yellow;
+}
+
+
+
+/* Add this CSS to override default input styles */
+input[type="text"] {
+    background-color: #9CA3AF;
+    color: black; /* Set the text color to improve visibility */
+    border: none;
+    padding: 5px;
+}
+
+main{
+    height: 2500px;
+    flex: 1; /* Allow the main content to expand and take available space */
+
+}
+
+.add-to-watchlist{
+    text-decoration: none;
+    
+}
+
+
+.add-to-watchlist:hover{
+    color: yellow;
+   
+}
+
+
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+a {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+a:hover{
+    color: yellow;
+}
+
+
+
+#moviediv-icon{
+    background-image: url("images/icon.png");
+    width: 70px;
+    height: 61px;
+    background-size: cover;
+}
+
+
+
+
+.movie h2 {
+    margin-top: 0;
+}
+
+.movie p {
+    margin: 5px 0;
+}
+
+
+/* Add this CSS to your existing styles */
+.white-text {
+    color: white;
+}
+
+.yellow-star {
+    color: yellow;
+}
+
+.movie {
+    border-radius: 5px;
+    text-align: left;
+    margin: 25px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10); /* Add box shadow */
+    
+}
+
+
+
+/* Updated styles for spacing between elements */
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.movie-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Add a small margin at the bottom */
+}
+
+
+
+
+.movie-info {
+    display: flex;
+    align-items: center;
+    margin-top: 5px; /* Add a small margin at the top */
+}
+
+.movie-info p {
+    margin: 0;
+}
+
+
+/* Rest of your existing CSS... */
+
+
+
+
+.movie-details p {
+    margin: 4px 0; /* Add spacing above and below paragraphs */
+    margin-right: 15px;
+}
+
+.movie .rating {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the movie divs horizontally */
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+}
+.white-text {
+    color: white;
+}
+
+.desc-text {
+    color:  #A5A5A5;
+    
+}
+
+.yellow-star {
+    color: yellow;
+}
+
+
+
+#noMoviesFound {
+    text-align: center;
+    margin: 400px 0;
+    font-weight: bold;
+    color: #2E2E2F;
+}
+
+
+/* Add this CSS to override default input styles */
+input[type="text"] {
+    background-color: #9CA3AF;
+    color: black; /* Set the text color to improve visibility */
+    border: none;
+    padding: 5px;
+}
+
+main{
+    height: 2500px;
+    flex: 1; /* Allow the main content to expand and take available space */
+
+}
+
+@media (max-width: 708px) {
+    .movie {
+        /* Updated styles for smaller screens */
+        flex-direction: column; /* Change the flex direction to column */
+        width: 90% !important; /* Reduce the width and add !important */
+        margin: 10px auto !important; /* Center the div and add !important */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adjust box shadow */
+    }
+
+    .movie-details {
+        background-color: transparent; /* Remove background color */
+    }
+
+
+
+    .movie img {
+        max-width: 100%; /* Make image width 100% */
+        margin: 0 auto; /* Center align image */
+   }
+
+    .movie h2 {
+        margin-bottom: 10px; /* Increase margin for better spacing */
+        
+    }
+
+    .movie-details p {
+        margin: 8px 0; /* Adjust margin for better spacing */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .movie-info {
+        display: flex;
+        flex-wrap: wrap; /* Allow movie info to wrap */
+        flex-direction: column;
+        gap: 10px; /* Add gap between items for spacing */
+        padding-bottom: 1em;
+        margin-left: 0;
+      text-align: left;
+      align-items: flex-start; /* Align flex items to the left */
+
+    }
+
+    .watchlist-movie {
+        border-radius: 5px; /* As per index.css */
+        text-align: left;
+        margin: 25px 0;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 10); /* Add box shadow */
+        width: 70%;
+    }
+
+ 
+
+    .movie-content{
+        display: flex;
+        flex-direction: column;
+      
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .movie-content img{
+        max-width: 70%; /* Set maximum width for movie image */
+        margin: 0 auto;
+
+    }
+}
+
+.lets-add{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}

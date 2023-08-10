@@ -1,0 +1,450 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the body takes at least the full viewport height */
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ------ HEADER SECTION  ------ */
+#header-container{
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+  
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+#headertext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 0 20px; /* Add padding to create space from the edge */
+   
+}
+span{
+    color: yellow;
+}
+
+
+h1, h3 {
+    color: whitesmoke;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+
+    font-size: 43px;
+    font-weight: 800;
+}
+
+a {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+a:hover{
+    color: yellow;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    z-index: 2000;
+}
+
+#search-form {
+    display: flex; /* Add flex display to the form */
+    align-items: center; /* Vertically center items within the form */
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    background-color: #9CA3AF;
+    border-radius: 5px;
+    padding: 5px;
+     border-radius: 5px 0 0px 5px; 
+    
+}
+
+#search-bar {
+  
+    padding: 5px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #9CA3AF;
+    border-radius: 5px;
+    color: black; /* Set the text color to improve visibility */
+}
+
+#search-bar:active,
+#search-bar:focus {
+    background-color: #9CA3AF; /* Background color remains consistent on active and focus states */
+}
+
+
+#clear-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+    margin: 0;
+    color: #4B4B4B;
+}
+
+
+
+#search-button {
+    height: 45px;
+    background-color: #4B4B4B;
+    border: none;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    cursor: pointer;
+    width: 130px;
+}
+
+.search-container {
+    position: relative;
+    z-index: 1;
+}
+
+
+#moviediv-icon{
+    background-image: url("images/icon.png");
+    width: 70px;
+    height: 61px;
+    background-size: cover;
+}
+
+#wrapper-moviediv-icon{
+    display: flex;
+    flex-direction: column;
+   
+    width: 300px;
+    height: 150px;
+    margin: 310px auto;
+    align-items: center;
+ 
+}
+
+h4{
+width: 148px;
+height: 20px;
+top: 508px;
+left: 201px;
+font-family: 'Inter', sans-serif;
+font-size: 18px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+color: #2E2E2F;
+
+}
+
+/* Add these styles to your existing CSS file or style block */
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the movie divs horizontally */
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+}
+
+/* Rest of your CSS code... */
+
+.description {
+    /* ... (Other styles) */
+    word-wrap: break-word; /* Allow words to break within the text */
+    overflow-wrap: break-word; /* Alternate property for better compatibility */
+    max-width: 700px; /* Set the maximum width before wrapping */
+    /* ... (Other styles) */
+}
+
+
+
+
+.movie img {
+    float: left; /* Float the image to the left */
+    max-width: 20%; /* Set maximum width for movie image */
+    height: auto;
+    margin-right: 10px; /* Add margin to separate image from details */
+}
+
+
+.movie h2 {
+    margin-top: 0;
+}
+
+.movie p {
+    margin: 5px 0;
+}
+
+
+/* Add this CSS to your existing styles */
+.white-text {
+    color: white;
+}
+
+.yellow-star {
+    color: yellow;
+}
+
+.movie {
+    border-radius: 5px;
+    text-align: left;
+    margin: 25px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10); /* Add box shadow */
+}
+
+
+/* Updated styles for spacing between elements */
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.movie-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Add a small margin at the bottom */
+}
+
+.movie-title {
+    margin: 0;
+    margin-right: 15px; /* Adds space to the right of the title */
+}
+
+.movie-info {
+    display: flex;
+    align-items: center;
+    margin-top: 5px; /* Add a small margin at the top */
+}
+
+.movie-info p {
+    margin: 0;
+}
+
+
+/* Rest of your existing CSS... */
+
+
+h2 {
+    color: wheat;
+    margin-bottom: 8px; /* Add spacing at the bottom of h2 */
+}
+
+
+.movie-details p {
+    margin: 4px 0; /* Add spacing above and below paragraphs */
+    margin-right: 15px;
+}
+
+.movie .rating {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+
+.desc-text {
+    color:  #A5A5A5;
+    
+}
+
+
+@media (max-width: 708px) {
+    .movie {
+        /* Updated styles for smaller screens */
+        flex-direction: column; /* Change the flex direction to column */
+        width: 90% !important; /* Reduce the width and add !important */
+        margin: 10px auto !important; /* Center the div and add !important */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adjust box shadow */
+       
+    }
+
+    .movie-details {
+        background-color: transparent; /* Remove background color */
+    }
+
+
+
+    .movie img {
+        max-width: 100%; /* Make image width 100% */
+        margin: 0 auto; /* Center align image */
+   }
+
+    .movie h2 {
+        margin-bottom: 10px; /* Increase margin for better spacing */
+      
+      
+        
+    }
+
+    .movie-details p {
+        margin: 8px 0; /* Adjust margin for better spacing */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .movie-info {
+        display: flex;
+        flex-wrap: wrap; /* Allow movie info to wrap */
+        flex-direction: column;
+        gap: 10px; /* Add gap between items for spacing */
+        padding-bottom: 1em;
+        margin-left: 0;
+      text-align: left;
+      align-items: flex-start; /* Align flex items to the left */
+
+    }
+
+    .watchlist-movie {
+        border-radius: 5px; /* As per index.css */
+        text-align: left;
+        margin: 25px 0;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 10); /* Add box shadow */
+    }
+
+ 
+
+    .movie-content{
+        display: flex;
+        flex-direction: column;
+    
+        width: 75%;
+    }
+
+    .movie-content img{
+        max-width: 50%; /* Set maximum width for movie image */
+
+    }
+}
+
+
+
+@media (min-width: 700px){
+
+    #search-bar {
+        width: 290px;
+    }
+}
+
+
+@media (min-width: 900px){
+
+    #search-bar {
+        width: 490px;
+    }
+}
+
+#noMoviesFound {
+    text-align: center;
+    margin: 400px 0;
+    font-weight: bold;
+    color: #2E2E2F;
+}
+
+
+/* Add this CSS to override default input styles */
+input[type="text"] {
+    background-color: #9CA3AF;
+    color: black; /* Set the text color to improve visibility */
+    border: none;
+    padding: 5px;
+}
+
+main{
+    height: 2500px;
+    flex: 1; /* Allow the main content to expand and take available space */
+
+}
+
+.add-to-watchlist{
+    text-decoration: none;
+    
+}
+
+
+.add-to-watchlist:hover{
+    color: yellow;
+   
+}
+
+
+.spinner {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.spinner i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+
+#loading-spinner {
+    color: white; /* Set the color to white */
+}
+
+.yellow-text {
+    color: yellow;
+}
+
+.white-text {
+    color: white;
+}
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <img src="images/header.jpg" id="header-img">
+            <div id="headertext">
+                <h1>Find your <span> film </span></h1>
+                <a href="Watchlist.html">My Watchlist</a> 
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search">
+                <form id="search-form">
+                    <div class="search-bar-container">
+                        <input type="text" placeholder="🔍 Search for a movie" id="search-bar">
+                        <button id="clear-button" onclick="clearSearchInput()" class="clear-button" style="display: none;">
+                            <i class="fas fa-times-circle"></i> <!-- Font Awesome icon -->
+                        </button>
+                    </div>
+                    <button type="submit" id="search-button">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+   <main>
+    <div id="loading-spinner" class="spinner">
+        <i class="fas fa-spinner fa-spin"></i> Loading...
+    </div>
+    
+      
+    
+    <div id="noMoviesFound" style="display: none;">Unable to find what you're looking for. Please try another search.</div>
+
+    <div id="movieData" class="movie-container"></div>
+    <div id="wrapper-moviediv-icon" class="hide">
+        <div id="moviediv-icon"></div>
+        <h4> Start exploring</h4>
+
+    </div>
+</main>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
