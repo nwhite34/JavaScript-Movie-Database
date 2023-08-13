@@ -160,7 +160,7 @@ color: #2E2E2F;
     display: flex;
     align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 10); /* Add box shadow */
-    width: 70%;
+    width: 65%;
 }
 
 
@@ -315,9 +315,7 @@ a:hover{
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10); /* Add box shadow */
-    
-}
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10); /* Add box shadow */}
 
 
 
@@ -375,7 +373,6 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Center the movie divs horizontally */
-    width: 70%;
     margin: 0 auto;
     color: white;
 }
