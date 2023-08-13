@@ -370,16 +370,28 @@ h2 {
         max-width: 50%; /* Set maximum width for movie image */
 
     }
-}
 
-
-
-@media (min-width: 700px){
-
-    #search-bar {
-        width: 290px;
+    .movie-header{
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start; /* Align flex items to the left */
+        justify-content: flex-start;
     }
+
+    .rating{
+        padding-left: 0px;
+        padding-right: 2px;
+
+    }
+   
+    .yellow-star{
+       
+        margin-left: -15px;
+        padding-right: 5px;
+    }
+   
 }
+
 
 
 @media (min-width: 900px){

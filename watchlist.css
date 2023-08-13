@@ -473,11 +473,33 @@ main{
         margin: 0 auto;
 
     }
-}
+    .movie-header{
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start; /* Align flex items to the left */
+        justify-content: flex-start;
+    }
+
+    .rating{
+        padding-left: 0px;
+        padding-right: 2px;
+        margin-top: 15px;
+
+    }
+   
+    h1 {
+        width: 75%; /* adjust as needed */
+        white-space: normal; /* allow wrapping */
+        overflow-wrap: break-word; /* break the word */
+        hyphens: auto; /* use hyphenation if available */
+    }
+
+
 
 .lets-add{
     text-decoration: none;
     color: white;
     cursor: pointer;
     margin-top: 10px;
+}
 }
