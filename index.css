@@ -391,10 +391,7 @@ h2 {
     }
 
        #search-bar {
-        width: 70%; /* Adjust this value to your preferred width */
-    }
-    #search-button {
-        width: 90px; /* Adjust this value to your preferred width */
+        width: 80%; /* Adjust this value to your preferred width */
     }
    
 }
