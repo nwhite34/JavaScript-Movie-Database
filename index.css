@@ -363,7 +363,7 @@ h2 {
         display: flex;
         flex-direction: column;
     
-        width: 75%;
+        width: 100%;
     }
 
     .movie-content img{
@@ -388,6 +388,13 @@ h2 {
        
         margin-left: -15px;
         padding-right: 5px;
+    }
+
+       #search-bar {
+        width: 70%; /* Adjust this value to your preferred width */
+    }
+    #search-button {
+        width: 90px; /* Adjust this value to your preferred width */
     }
    
 }
