@@ -435,7 +435,7 @@ h2 {
     }
 
     #search-button {
-        width: 65px;
+        width: 70px;
 
     }
 
@@ -510,6 +510,25 @@ main {
     color: white;
 }
 
+
+@media (max-width: 390px) {
+    #search-bar::placeholder {
+        padding: 5px;
+        height: 25px;
+        border: none;
+        outline: none;
+        background: none;
+        border-radius: 5px;
+        color: #9CA3AF;
+
+    }
+
+    #search-bar {
+        background-color: #2E2E2F;
+    }
+
+
+}
 
 @media (max-width: 390px) {
     #search-bar::placeholder {
