@@ -159,7 +159,7 @@ a:hover{
    
     width: 300px;
     height: 150px;
-    margin: 310px auto;
+    margin: 295px auto;
     align-items: center;
  
 }
@@ -314,7 +314,12 @@ h2 {
         background-color: transparent; /* Remove background color */
     }
 
-
+    h1 {
+        font-family: 'Inter', sans-serif;
+    
+        font-size: 32px;
+        font-weight: 800;
+    }
 
     .movie img {
         max-width: 100%; /* Make image width 100% */
@@ -390,9 +395,8 @@ h2 {
         padding-right: 5px;
     }
 
-       #search-bar {
-        width: 80%; /* Adjust this value to your preferred width */
-    }
+      
+
    
 }
 

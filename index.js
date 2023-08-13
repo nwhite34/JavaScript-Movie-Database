@@ -4,6 +4,9 @@ const apiUrl = 'https://www.omdbapi.com/';
 const movieDataContainer = document.getElementById('movieData');
 const wrapperIcon = document.getElementById('wrapper-moviediv-icon');
 const noMoviesFoundElement = document.getElementById('noMoviesFound');
+const clearButton = document.getElementById('clear-button');
+clearButton.addEventListener('click', clearSearchInput);
+
 
 function toggleWrapperIcon() {
     if (movieDataContainer.childElementCount > 0) {
@@ -152,10 +155,19 @@ const headerTitle = document.querySelector('header h1');
 headerTitle.addEventListener('click', resetPage);
 
 function clearSearchInput() {
+    // Clear the search input value
     const searchInput = document.getElementById("search-bar");
     searchInput.value = "";
+    
+    // Hide the clear button
     const clearButton = document.getElementById('clear-button');
-    clearButton.style.display = 'none'; // Hide the clear button
+    clearButton.style.display = 'none';
+    
+    // Clear the movie data container
+    movieDataContainer.innerHTML = '';
+    
+    // Reset any other visual elements, such as the wrapper icon
+    toggleWrapperIcon();
 }
 
 // Initial check when the page loads
@@ -166,18 +178,18 @@ const observer = new MutationObserver(() => {
 });
 observer.observe(movieDataContainer, { childList: true });
 
+// ...
+
 const searchInput = document.getElementById('search-bar');
-searchInput.addEventListener('keydown', handleSearchInputChange);
+searchInput.addEventListener('input', handleSearchInputChange);
 
 function handleSearchInputChange(event) {
     const clearButton = document.getElementById('clear-button');
     clearButton.style.display = event.target.value ? 'block' : 'none';
-
-    if (event.key === 'Enter') {
-        event.preventDefault(); // Prevent the default form submission behavior
-        handleSearch(event);
-    }
 }
+
+// ...
+
 
 function addToWatchlist(movie) {
     let watchlist = getWatchlist();
@@ -209,3 +221,15 @@ function isInWatchlist(movie) {
     const watchlist = getWatchlist();
     return watchlist.some(item => item.imdbID === movie.imdbID);
 }
+var input = document.getElementById("search-bar"); // Note the change here
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("search-button").click(); // Note the change here
+  }
+});

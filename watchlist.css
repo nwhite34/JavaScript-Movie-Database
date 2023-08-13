@@ -275,6 +275,7 @@ a:hover{
     width: 70px;
     height: 61px;
     background-size: cover;
+    margin-top: -20PX;
 }
 
 
@@ -488,10 +489,13 @@ main{
     }
    
     h1 {
-        width: 75%; /* adjust as needed */
-        white-space: normal; /* allow wrapping */
-        overflow-wrap: break-word; /* break the word */
-        hyphens: auto; /* use hyphenation if available */
+       
+
+        
+            font-size: 32px;
+            font-weight: 800;
+        }
+    
     }
 
 
@@ -500,6 +504,5 @@ main{
     text-decoration: none;
     color: white;
     cursor: pointer;
-    margin-top: 10px;
-}
+    margin-top: 20px;
 }
