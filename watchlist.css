@@ -329,7 +329,10 @@ a:hover{
     margin-bottom: 5px; /* Add a small margin at the bottom */
 }
 
-
+.rating{
+    padding-left: 0px;
+    margin-left: 10px;
+}
 
 
 .movie-info {

@@ -97,7 +97,6 @@ a:hover{
 }
 
 #search-bar {
-  
     padding: 5px;
     height: 25px;
     border: none;
@@ -106,6 +105,7 @@ a:hover{
     background-color: #9CA3AF;
     border-radius: 5px;
     color: black; /* Set the text color to improve visibility */
+    width: 490px;
 }
 
 #search-bar:active,
@@ -394,19 +394,24 @@ h2 {
         margin-left: -15px;
         padding-right: 5px;
     }
-
-      
-
-   
+    
+    #search-button{
+        width: 65px;
+       
+    }
+    #search-bar {
+        width: 210px;
+        
+    }
 }
+
+
 
 
 
 @media (min-width: 900px){
 
-    #search-bar {
-        width: 490px;
-    }
+    
 }
 
 #noMoviesFound {
