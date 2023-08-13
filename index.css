@@ -322,7 +322,7 @@ h2 {
 }
 
 
-@media (max-width: 708px) {
+@media (max-width: 892px) {
     .movie {
         /* Updated styles for smaller screens */
         flex-direction: column;
