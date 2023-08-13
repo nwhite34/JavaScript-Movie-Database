@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     background-color: #121212;
@@ -8,7 +9,8 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Make sure the body takes at least the full viewport height */
+    min-height: 100vh;
+    /* Make sure the body takes at least the full viewport height */
     margin: 0;
     padding: 0;
     background-color: #121212;
@@ -16,12 +18,12 @@ body {
 }
 
 /* ------ HEADER SECTION  ------ */
-#header-container{
+#header-container {
     position: relative;
     width: 100%;
     height: 25vh;
     overflow: hidden;
-  
+
 }
 
 #header-img {
@@ -40,15 +42,18 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    padding: 0 20px; /* Add padding to create space from the edge */
-   
+    padding: 0 20px;
+    /* Add padding to create space from the edge */
+
 }
-span{
+
+span {
     color: yellow;
 }
 
 
-h1, h3 {
+h1,
+h3 {
     color: whitesmoke;
 }
 
@@ -69,7 +74,7 @@ a {
     cursor: pointer;
 }
 
-a:hover{
+a:hover {
     color: yellow;
 }
 
@@ -82,35 +87,40 @@ a:hover{
 }
 
 #search-form {
-    display: flex; /* Add flex display to the form */
-    align-items: center; /* Vertically center items within the form */
+    display: flex;
+    /* Add flex display to the form */
+    align-items: center;
+    /* Vertically center items within the form */
 }
 
 .search-bar-container {
     display: flex;
     align-items: center;
-    background-color: #9CA3AF;
+    background-color: #2E2E2F;
     border-radius: 5px;
     padding: 5px;
-     border-radius: 5px 0 0px 5px; 
-    
+    border-radius: 5px 0 0px 5px;
+
 }
 
 #search-bar {
     padding: 5px;
-    height: 25px;
+    height: 15px;
     border: none;
     outline: none;
     background: none;
-    background-color: #9CA3AF;
+
+    background-color: #2E2E2F;
     border-radius: 5px;
-    color: black; /* Set the text color to improve visibility */
+    color: #A5A5A5;
+    /* Set the text color to improve visibility */
     width: 490px;
 }
 
 #search-bar:active,
 #search-bar:focus {
-    background-color: #9CA3AF; /* Background color remains consistent on active and focus states */
+    background-color: #2E2E2F;
+    color: #A5A5A5;
 }
 
 
@@ -118,15 +128,14 @@ a:hover{
     background: none;
     border: none;
     cursor: pointer;
-    
-    margin: 0;
+    margin-left: 3px;
     color: #4B4B4B;
 }
 
 
 
 #search-button {
-    height: 45px;
+    height: 35px;
     background-color: #4B4B4B;
     border: none;
     color: white;
@@ -146,36 +155,36 @@ a:hover{
 }
 
 
-#moviediv-icon{
+#moviediv-icon {
     background-image: url("images/icon.png");
     width: 70px;
     height: 61px;
     background-size: cover;
 }
 
-#wrapper-moviediv-icon{
+#wrapper-moviediv-icon {
     display: flex;
     flex-direction: column;
-   
+
     width: 300px;
     height: 150px;
     margin: 295px auto;
     align-items: center;
- 
+
 }
 
-h4{
-width: 148px;
-height: 20px;
-top: 508px;
-left: 201px;
-font-family: 'Inter', sans-serif;
-font-size: 18px;
-font-weight: 700;
-line-height: 20px;
-letter-spacing: 0em;
-text-align: center;
-color: #2E2E2F;
+h4 {
+    width: 148px;
+    height: 20px;
+    top: 508px;
+    left: 201px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #2E2E2F;
 
 }
 
@@ -184,7 +193,8 @@ color: #2E2E2F;
 .movie-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the movie divs horizontally */
+    justify-content: center;
+    /* Center the movie divs horizontally */
     width: 70%;
     margin: 0 auto;
     color: white;
@@ -194,9 +204,12 @@ color: #2E2E2F;
 
 .description {
     /* ... (Other styles) */
-    word-wrap: break-word; /* Allow words to break within the text */
-    overflow-wrap: break-word; /* Alternate property for better compatibility */
-    max-width: 700px; /* Set the maximum width before wrapping */
+    word-wrap: break-word;
+    /* Allow words to break within the text */
+    overflow-wrap: break-word;
+    /* Alternate property for better compatibility */
+    max-width: 700px;
+    /* Set the maximum width before wrapping */
     /* ... (Other styles) */
 }
 
@@ -204,11 +217,13 @@ color: #2E2E2F;
 
 
 .movie img {
-    float: left; /* Float the image to the left */
-    max-width: 20%; /* Set maximum width for movie image */
-    height: auto;
-    margin-right: 10px; /* Add margin to separate image from details */
+    float: left;
+    width: 150px; /* Set the exact width */
+    height: 225px; /* Set the exact height */
+    margin-right: 10px;
+    object-fit: cover; /* This will make sure the image scales while maintaining aspect ratio */
 }
+
 
 
 .movie h2 {
@@ -231,13 +246,15 @@ color: #2E2E2F;
 
 .movie {
     border-radius: 5px;
+    width: 1300px;
     text-align: left;
     margin: 25px 0;
     padding: 10px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10); /* Add box shadow */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+    /* Add box shadow */
 }
 
 
@@ -254,18 +271,21 @@ color: #2E2E2F;
 .movie-header {
     display: flex;
     align-items: center;
-    margin-bottom: 5px; /* Add a small margin at the bottom */
+    margin-bottom: 5px;
+    /* Add a small margin at the bottom */
 }
 
 .movie-title {
     margin: 0;
-    margin-right: 15px; /* Adds space to the right of the title */
+    margin-right: 15px;
+    /* Adds space to the right of the title */
 }
 
 .movie-info {
     display: flex;
     align-items: center;
-    margin-top: 5px; /* Add a small margin at the top */
+    margin-top: 5px;
+    /* Add a small margin at the top */
 }
 
 .movie-info p {
@@ -278,12 +298,14 @@ color: #2E2E2F;
 
 h2 {
     color: wheat;
-    margin-bottom: 8px; /* Add spacing at the bottom of h2 */
+    margin-bottom: 8px;
+    /* Add spacing at the bottom of h2 */
 }
 
 
 .movie-details p {
-    margin: 4px 0; /* Add spacing above and below paragraphs */
+    margin: 4px 0;
+    /* Add spacing above and below paragraphs */
     margin-right: 15px;
 }
 
@@ -295,63 +317,77 @@ h2 {
 
 
 .desc-text {
-    color:  #A5A5A5;
-    
+    color: #A5A5A5;
+
 }
 
 
 @media (max-width: 708px) {
     .movie {
         /* Updated styles for smaller screens */
-        flex-direction: column; /* Change the flex direction to column */
-        width: 90% !important; /* Reduce the width and add !important */
-        margin: 10px auto !important; /* Center the div and add !important */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adjust box shadow */
-       
+        flex-direction: column;
+        /* Change the flex direction to column */
+        width: 90% !important;
+        /* Reduce the width and add !important */
+        margin: 10px auto !important;
+        /* Center the div and add !important */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        /* Adjust box shadow */
+
     }
 
     .movie-details {
-        background-color: transparent; /* Remove background color */
+        background-color: transparent;
+        /* Remove background color */
     }
 
     h1 {
         font-family: 'Inter', sans-serif;
-    
+
         font-size: 32px;
         font-weight: 800;
     }
 
     .movie img {
-        max-width: 100%; /* Make image width 100% */
-        margin: 0 auto; /* Center align image */
-   }
+        max-width: 100%;
+        /* Make image width 100% */
+        margin: 0 auto;
+        /* Center align image */
+    }
 
     .movie h2 {
-        margin-bottom: 10px; /* Increase margin for better spacing */
-      
-      
-        
+        margin-bottom: 10px;
+        /* Increase margin for better spacing */
+
+
+
     }
 
     .movie-details p {
-        margin: 8px 0; /* Adjust margin for better spacing */
-        margin-right: 0; /* Remove right margin */
+        margin: 8px 0;
+        /* Adjust margin for better spacing */
+        margin-right: 0;
+        /* Remove right margin */
     }
 
     .movie-info {
         display: flex;
-        flex-wrap: wrap; /* Allow movie info to wrap */
+        flex-wrap: wrap;
+        /* Allow movie info to wrap */
         flex-direction: column;
-        gap: 10px; /* Add gap between items for spacing */
+        gap: 10px;
+        /* Add gap between items for spacing */
         padding-bottom: 1em;
         margin-left: 0;
-      text-align: left;
-      align-items: flex-start; /* Align flex items to the left */
+        text-align: left;
+        align-items: flex-start;
+        /* Align flex items to the left */
 
     }
 
     .watchlist-movie {
-        border-radius: 5px; /* As per index.css */
+        border-radius: 5px;
+        /* As per index.css */
         text-align: left;
         margin: 25px 0;
         padding: 10px;
@@ -359,49 +395,53 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 10); /* Add box shadow */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+        /* Add box shadow */
     }
 
- 
 
-    .movie-content{
+
+    .movie-content {
         display: flex;
         flex-direction: column;
-    
+
         width: 100%;
     }
 
-    .movie-content img{
-        max-width: 50%; /* Set maximum width for movie image */
+    .movie-content img {
+        max-width: 50%;
+        /* Set maximum width for movie image */
 
     }
 
-    .movie-header{
+    .movie-header {
         flex-direction: column;
         text-align: left;
-        align-items: flex-start; /* Align flex items to the left */
+        align-items: flex-start;
+        /* Align flex items to the left */
         justify-content: flex-start;
     }
 
-    .rating{
+    .rating {
         padding-left: 0px;
         padding-right: 2px;
 
     }
-   
-    .yellow-star{
-       
+
+    .yellow-star {
+
         margin-left: -15px;
         padding-right: 5px;
     }
-    
-    #search-button{
+
+    #search-button {
         width: 65px;
-       
+
     }
+
     #search-bar {
         width: 210px;
-        
+
     }
 }
 
@@ -409,10 +449,7 @@ h2 {
 
 
 
-@media (min-width: 900px){
-
-    
-}
+@media (min-width: 900px) {}
 
 #noMoviesFound {
     text-align: center;
@@ -425,26 +462,28 @@ h2 {
 /* Add this CSS to override default input styles */
 input[type="text"] {
     background-color: #9CA3AF;
-    color: black; /* Set the text color to improve visibility */
+    color: black;
+    /* Set the text color to improve visibility */
     border: none;
     padding: 5px;
 }
 
-main{
+main {
     height: 2500px;
-    flex: 1; /* Allow the main content to expand and take available space */
+    flex: 1;
+    /* Allow the main content to expand and take available space */
 
 }
 
-.add-to-watchlist{
+.add-to-watchlist {
     text-decoration: none;
-    
+
 }
 
 
-.add-to-watchlist:hover{
+.add-to-watchlist:hover {
     color: yellow;
-   
+
 }
 
 
@@ -461,7 +500,8 @@ main{
 
 
 #loading-spinner {
-    color: white; /* Set the color to white */
+    color: white;
+    /* Set the color to white */
 }
 
 .yellow-text {
@@ -473,3 +513,21 @@ main{
 }
 
 
+@media (max-width: 390px) {
+    #search-bar::placeholder {
+        padding: 5px;
+        height: 25px;
+        border: none;
+        outline: none;
+        background: none;
+        border-radius: 5px;
+        color: #9CA3AF;
+
+    }
+
+    #search-bar {
+        background-color: #2E2E2F;
+    }
+
+
+}
